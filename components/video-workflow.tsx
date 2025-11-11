@@ -17,11 +17,6 @@ export default function VideoWorkflow() {
             alt="TapServe QR code ordering workflow showing scanning to serving"
             className="w-full h-auto"
           />
-          <div className="absolute inset-0 flex items-center justify-center group cursor-pointer">
-            <div className="w-20 h-20 rounded-full bg-primary group-hover:bg-primary/90 flex items-center justify-center transition-colors">
-              <div className="w-0 h-0 border-l-8 border-l-primary-foreground border-t-5 border-t-transparent border-b-5 border-b-transparent ml-1" />
-            </div>
-          </div>
         </div>
 
         <p className="text-center mt-12 text-muted-foreground max-w-2xl mx-auto">
