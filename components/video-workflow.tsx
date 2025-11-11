@@ -13,7 +13,7 @@ export default function VideoWorkflow() {
 
         <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black animate-slide-up">
           <img
-            src="/workflow.PNG"
+            src="/workflow.png"
             alt="TapServe QR code ordering workflow showing scanning to serving"
             className="w-full h-auto"
           />
