@@ -35,7 +35,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-4">
           <Button variant="outline" asChild>
-            <a href="http://91.98.35.46:5173/login">Sign In</a>
+            <a href="http://49.13.221.24:5173/login">Sign In</a>
           </Button>
         </div>
 
@@ -60,7 +60,7 @@ export default function Header() {
             </a>
             <div className="flex gap-3 pt-4">
               <Button variant="outline" className="flex-1 bg-transparent" asChild>
-                <a href="http://91.98.35.46:5173/login">Sign In</a>
+                <a href="http://49.13.221.24:5173/login">Sign In</a>
               </Button>
               <Button className="flex-1 bg-primary hover:bg-primary/90">Get Started</Button>
             </div>
