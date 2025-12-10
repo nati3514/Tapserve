@@ -50,7 +50,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="http://91.98.35.46:5173/register">
+                <a href="http://49.13.221.24:5173/login">
                   Get Started
                 </a>
               </Button>
