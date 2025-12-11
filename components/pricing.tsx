@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 const plans = [
   {
     name: "Basic",
-    price: "2,499",
+    price: "3,999",
     period: "ETB / month",
     description: "For small cafés or startups",
     features: ["Features", "POS System", "Kitchen Display", "Invoices", "Basic Reports"],
@@ -12,7 +12,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "4,490",
+    price: "6,999",
     period: "ETB / month",
     description: "For growing restaurants looking to digitize",
     features: [
@@ -27,7 +27,7 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "7,490",
+    price: "10,999",
     period: "ETB / month",
     description: "For restaurants wanting full control and branded presence",
     features: [
