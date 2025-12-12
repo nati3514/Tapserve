@@ -23,6 +23,16 @@ export default function Hero() {
       description: "Customers scan and order directly from their table",
       image: "/qrmenu.png",
     },
+    {
+      title: "Customer Order Flow",
+      description: "Customers scan and order directly from their table",
+      image: "/tapserve4.png",
+    },
+    {
+      title: "POS",
+      description: "Customers scan and order directly from their table",
+      image: "/tapserve5.png",
+    },
   ]
 
   useEffect(() => {
