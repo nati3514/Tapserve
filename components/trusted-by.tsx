@@ -10,22 +10,24 @@ const restaurants = [
     phone: "0947936131",
     mapUrl: "https://www.google.com/maps?saddr&daddr=Bola+24+Under,+Kokeb+Building,+Addis+Ababa+1000+Ethiopia@9.010938,38.797977",
     images: [
+      "/tapserve6.jpg",
+      "/tapserve4.png",
       "/ende-bet-1.png",
       "/ende-bet-2.png",
       "/ende-bet-3.png"
     ]
   },
-  {
-    name: "Abyssinia Traditional Restaurant",
-    location: "Bole Road, Addis Ababa Ethiopia",
-    phone: "0911123456",
-    mapUrl: "https://www.google.com/maps/place/Yod+Abyssinia+Traditional+Food/@9.0181064,38.7897825,17z",
-    images: [
-      "/yod-1.jpg",
-      "/yod-2.jpg",
-      "/yod-3.jpg"
-    ]
-  }
+  // {
+  //   name: "Abyssinia Traditional Restaurant",
+  //   location: "Bole Road, Addis Ababa Ethiopia",
+  //   phone: "0911123456",
+  //   mapUrl: "https://www.google.com/maps/place/Yod+Abyssinia+Traditional+Food/@9.0181064,38.7897825,17z",
+  //   images: [
+  //     "/yod-1.jpg",
+  //     "/yod-2.jpg",
+  //     "/yod-3.jpg"
+  //   ]
+  // }
 ]
 
 export default function TrustedBy() {
@@ -58,17 +60,18 @@ export default function TrustedBy() {
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           {restaurants.map((restaurant, restaurantIndex) => (
             <div key={restaurantIndex} className="bg-card rounded-2xl overflow-hidden shadow-lg animate-slide-up">
-              <div className="h-64 relative overflow-hidden">
+              <div className="relative overflow-hidden" style={{ paddingBottom: '56.25%' }}>
                 <div 
                   className="absolute inset-0 flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${currentImageIndices[restaurantIndex] * 100}%)` }}
                 >
                   {restaurant.images.map((img, idx) => (
-                    <div key={idx} className="w-full flex-shrink-0">
+                    <div key={idx} className="w-full flex-shrink-0 flex items-center justify-center">
                       <img 
                         src={img}
                         alt={`${restaurant.name} - ${idx + 1}`}
-                        className="w-full h-full object-cover"
+                        className="max-w-full max-h-full object-contain"
+                        style={{ width: 'auto', height: 'auto' }}
                       />
                     </div>
                   ))}
